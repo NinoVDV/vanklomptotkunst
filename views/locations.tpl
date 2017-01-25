@@ -1,4 +1,4 @@
-  {foreach from=$result item=oneItem} {foreach from=$result2 item=oneItem2}
+  {foreach from=$result item=oneItem}
 <header>
     <div class="container">
         <div class="image" style="background: url('{$oneItem.afbeelding_locatie}') center;">
@@ -12,6 +12,7 @@
 </header>
 <!-- End Header -->
 
+{/foreach}
 
 <!-- Locaties -->
 <section id="locations">
@@ -24,9 +25,9 @@
 </aside>
 
 <div class="thumbs">
-
+{foreach from=$result2 item=oneItem2}
 <div class="col-25 filter-kunst" style="background: url('{$oneItem2.thumbnail}') no-repeat center top; background-size: cover;">
-<a href="#">
+<a href="?action=pagina&vereniging={$oneItem2.id}">
   <div class="overlay">
       <h3>{$oneItem2.naam_vereniging}</h3>
       <p>
@@ -35,83 +36,7 @@
   </div>
 </a>
 </div>
-
-<div class="col-25 filter-cultuur" style="background: url('http://onh.nl/data/uploads/thumbnails/2014052121537d057e285e3.jpg') no-repeat center top; background-size: cover;">
-<a href="#">
-  <div class="overlay">
-      <h3>Edam Kaasmarkt</h3>
-      <p>Lorem ipsum dolor sit amet ,
-          consectetur adipiscing amet elit.
-      </p>
-  </div>
-</a>
-</div>
-
-<div class="col-25 filter-cultuur" style="background: url('http://www.holland.com/upload_mm/0/4/2/2891_fullimage_edam_560x350.jpg') no-repeat center top; background-size: cover;">
-<a href="#">
-  <div class="overlay">
-      <h3>Bloemenparadijs</h3>
-      <p>Lorem ipsum dolor sit amet ,
-          consectetur adipiscing amet elit.
-      </p>
-  </div>
-</a>
-</div>
-
-<div class="col-25 filter-kunst" style="background: url('http://upload.wikimedia.org/wikipedia/commons/5/5b/Edam_Grote_of_Sint-Nicolaaskerk.jpg') no-repeat center top; background-size: cover;">
-<a href="#">
-  <div class="overlay">
-      <h3>Sint-Nicolaas kerk</h3>
-      <p>Lorem ipsum dolor sit amet ,
-          consectetur adipiscing amet elit.
-      </p>
-  </div>
-</a>
-</div>
-
-<div class="col-25 filter-cultuur" style="background: url('http://hollandtour.org/files/great_edam_city_centre.jpg') no-repeat center top; background-size: cover;">
-<a href="#">
-  <div class="overlay">
-      <h3>MeiBeurs</h3>
-      <p>Lorem ipsum dolor sit amet ,
-          consectetur adipiscing amet elit.
-      </p>
-  </div>
-</a>
-</div>
-
-<div class="col-25 filter-kunst" style="background: url('http://www.charmanthotel.com/uploads/1264676830.jpg') no-repeat center top; background-size: cover;">
-<a href="#">
-  <div class="overlay">
-      <h3>Art Haven</h3>
-      <p>Lorem ipsum dolor sit amet ,
-          consectetur adipiscing amet elit.
-      </p>
-  </div>
-</a>
-</div>
-
-<div class="col-25 filter-cultuur" style="background: url('http://upload.wikimedia.org/wikipedia/commons/6/64/Fort_bij_Edam_006.JPG') no-repeat center top; background-size: cover;">
-<a href="#">
-  <div class="overlay">
-      <h3>Fort</h3>
-      <p>Lorem ipsum dolor sit amet ,
-          consectetur adipiscing amet elit.
-      </p>
-  </div>
-</a>
-</div>
-</div>
-
-<div class="pagination">
-<li>
-<a href="#" class="active">1</a>
-<a href="#">2</a>
-<a href="#">3</a>
-</li>
-</div>
-
+{/foreach}
 </div>
 </section>
 <!-- End Locaties -->
-  {/foreach}{/foreach}

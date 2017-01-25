@@ -16,9 +16,10 @@ $plaats_vereniging = $_POST['plaats'];
 $type_vereniging = $_POST['type'];
 $telefoon_vereniging = $_POST['telefoon'];
 $wachtwoord = $_POST['wachtwoord'];
+$thumbnail = $_POST['thumbnail'];
 
 $sql= "INSERT into vereniging (voornaam, achternaam, email_vereniging, naam_vereniging,
-website_vereniging, plaats_vereniging, type_vereniging, telefoon_vereniging, wachtwoord) VALUES ('$voornaam','$achternaam','$email_vereniging','$naam_vereniging','$website_vereniging','$plaats_vereniging','$type_vereniging','$telefoon_vereniging', '$wachtwoord')";
+website_vereniging, plaats_vereniging, type_vereniging, telefoon_vereniging, wachtwoord, thumbnail) VALUES ('$voornaam','$achternaam','$email_vereniging','$naam_vereniging','$website_vereniging','$plaats_vereniging','$type_vereniging','$telefoon_vereniging', '$wachtwoord', '$thumbnail')";
 
  $result = mysqli_query($con,$sql);
 

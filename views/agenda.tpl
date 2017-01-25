@@ -12,8 +12,6 @@
         </header>
 <!-- End Header -->
 
-
-
 <!-- Agenda -->
 <section id="agenda">
     <div class="container">

@@ -179,11 +179,11 @@
                             <input type="text" placeholder="E-mail" name="e-mail">
                             <input class="first" type="text" placeholder="Naam organisatie" name="naam-organisatie">
                             <input type="text" placeholder="Website" name="website">
-                            <input class="first" placeholder="Wachtwoord" type="password" name="wachtwoord">
-                            <input class="first" placeholder="Herhaal wachtwoord" type="password" name="wachtwoord2">
-
-
-
+                            <input class="first" placeholder="Voeg een thumbnail toe (link)" type="text" name="thumbnail">
+                            <br>
+                            <input type="password" placeholder="Wachtwoord" name="wachtwoord" style="font-size:12px;">
+                            <input class="first" type="password" placeholder="Herhaal wachtwoord" name="wachtwoord2" style="font-size:12px;">
+                            <br>
                             <select class="first" name="type">
                                 <option value="cultuur">Cultuur</option>
                                 <option value="kunst">Kunst</option>
@@ -197,6 +197,7 @@
                                 <option value="schardam">Schardam</option>
                                 <option value="beets">Beets</option>
                                 <option value="middelie">Middelie</option>
+                                <option value="hobrede">Hobrede</option>
                             </select>
                             <input type="submit" value="Verstuur" name="subscribe" class="btn">
                         </form>

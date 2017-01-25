@@ -31,14 +31,14 @@
                         <option value="kunst">Kunst</option>
                     </select>
                     <select name="plaats">
-                        <option value="edam">Edam</option>
-                        <option value="volendam">Volendam</option>
-                        <option value="warder">Warder</option>
-                        <option value="kwadijk">Kwadijk</option>
-                        <option value="oosthuizen">Oosthuizen</option>
-                        <option value="schardam">Schardam</option>
-                        <option value="beets">Beets</option>
-                        <option value="middelie">Middelie</option>
+                        <option value="Edam">Edam</option>
+                        <option value="Volendam">Volendam</option>
+                        <option value="Warder">Warder</option>
+                        <option value="Kwadijk">Kwadijk</option>
+                        <option value="Oosthuizen">Oosthuizen</option>
+                        <option value="Schardam">Schardam</option>
+                        <option value="Beets">Beets</option>
+                        <option value="Middelie">Middelie</option>
                     </select>
                     <input type="submit" value="Verstuur" name="subscribe" class="btn">
                 </form>
