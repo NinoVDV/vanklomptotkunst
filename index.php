@@ -1,8 +1,10 @@
 <?php
+session_start();
 include 'includes/config.php';
 require 'libs/Smarty.class.php';
 include 'includes/bootstrap.php';
 include 'includes/database.php';
+
 
 $templateParser->display('views/head.tpl');
 $templateParser->display('views/search-bar.tpl');
@@ -11,6 +13,7 @@ $action = isset($_GET['action'])?$_GET['action']:'home';
 $location = isset($_GET['location'])?$_GET['location']:'';
 $templateParser->assign('action', $action);
 $templateParser->display('views/nav.tpl');
+
 //$templateParser->display('views/tooltip.tpl');
 switch($action){
   case 'home':
@@ -31,6 +34,14 @@ switch($action){
     $templateParser->display('contact.tpl');
     break;
 
+  case 'admin':
+      include ('admin/login.php');
+    break;
+
+  case 'logout':
+    include ('admin/logout.php');
+    break;
+
   case 'locations':
     include ('model/select_locatie.php');
     $templateParser->assign('result', $result);
@@ -39,8 +50,21 @@ switch($action){
     $templateParser->display('locations.tpl');
     break;
 
+
   case 'dashboard':
-    $templateParser->display('show_dashboard.tpl');
+
+    include('admin/check_login.php');
+    if (empty($_SESSION['phpro_user_id'])){
+      echo '<br>';
+      echo '<br>';
+      echo '<br>';
+      echo '<h2>Geen toegang, niet ingelogd als admin!</h2>';
+      echo '<br>';
+      echo '<a href="http://19941.hosts.ma-cloud.nl/klomp/vanklomptotkunst/index.php?action=admin">Admin login</a>';
+    }
+    else {
+      $templateParser->display('show_dashboard.tpl');
+    }
     break;
 
   case 'maak_pagina':
@@ -70,10 +94,13 @@ switch($action){
     $templateParser->assign('result', $result);
     break;
 
-  case 'admin':
-    $templateParser->display('login.tpl');
+
+
+  case 'vereniging_user':
+    $templateParser->display('vereniging_login.tpl');
     break;
 };
+
 
 $templateParser->display('footer.tpl');
  ?>

@@ -47,15 +47,15 @@
 
           <!-- Mobile subnav -->
           <ul class="subnav">
-            <li><a href="#">Edam</a></li>
-            <li><a href="#">Volendam</a></li>
-            <li><a href="#">Warder</a></li>
-            <li><a href="#">Kwadijk</a></li>
-            <li><a href="#">Oosthuizen</a></li>
-            <li><a href="#">Schardam</a></li>
-            <li><a href="#">Beets</a></li>
-            <li><a href="#">Middelie</a></li>
-            <li><a href="#">Hobrede</a></li>
+            <li><a href="?action=locations&location=Edam">Edam</a></li>
+            <li><a href="?action=locations&location=Volendam">Volendam</a></li>
+            <li><a href="?action=locations&location=Warder">Warder</a></li>
+            <li><a href="?action=locations&location=Kwadijk">Kwadijk</a></li>
+            <li><a href="?action=locations&location=Oosthuizen">Oosthuizen</a></li>
+            <li><a href="?action=locations&location=Schardam">Schardam</a></li>
+            <li><a href="?action=locations&location=Beets">Beets</a></li>
+            <li><a href="?action=locations&location=Middelie">Middelie</a></li>
+            <li><a href="?action=locations&location=Hobrede">Hobrede</a></li>
           </ul>
            <!-- End Mobile subnav -->
 

@@ -1,7 +1,7 @@
 <br>
 <br>
 <br>
-<h1>Maak verenigingpagina</h1>
+<h2>Maak verenigingpagina</h2>
 <form method="post">
     <input type="text" placeholder="Naam pagina" name="naam_vp" required>
     <input type="text" placeholder="Adres" name="adres_vp" required>

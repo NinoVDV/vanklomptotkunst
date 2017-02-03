@@ -11,7 +11,7 @@ $result = mysqli_query($con,$sql);
 echo '<br>';
 echo '<br>';
 echo '<br>';
-echo '<h1>Verwijder paginas</h1>';
+echo '<h2>Verwijder paginas</h2>';
     while($row = $result->fetch_assoc()) {
 
         echo "<h4>Naam: " . $row["naam_vp"]. "</h4>";

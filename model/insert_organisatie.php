@@ -21,6 +21,11 @@ $thumbnail = $_POST['thumbnail'];
 $sql= "INSERT into vereniging (voornaam, achternaam, email_vereniging, naam_vereniging,
 website_vereniging, plaats_vereniging, type_vereniging, telefoon_vereniging, wachtwoord, thumbnail) VALUES ('$voornaam','$achternaam','$email_vereniging','$naam_vereniging','$website_vereniging','$plaats_vereniging','$type_vereniging','$telefoon_vereniging', '$wachtwoord', '$thumbnail')";
 
+if ($_POST['wachtwoord']!= $_POST['wachtwoord2'])
+ {
+     echo("Oops! Password did not match! Try again. ");
+ }
+
  $result = mysqli_query($con,$sql);
 
  mysqli_close($con);

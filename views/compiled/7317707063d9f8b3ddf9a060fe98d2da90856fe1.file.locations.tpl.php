@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2017-01-24 10:24:16
+<?php /* Smarty version Smarty-3.1.18, created on 2017-02-03 12:23:02
          compiled from "views\locations.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:304675887195acd4e33-55527789%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7317707063d9f8b3ddf9a060fe98d2da90856fe1' => 
     array (
       0 => 'views\\locations.tpl',
-      1 => 1485249852,
+      1 => 1486120980,
       2 => 'file',
     ),
   ),
@@ -46,9 +46,7 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
     </div>
 </header>
 <!-- End Header -->
-
 <?php } ?>
-
 <!-- Locaties -->
 <section id="locations">
 <div class="container">
@@ -65,7 +63,8 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
 foreach ($_from as $_smarty_tpl->tpl_vars['oneItem2']->key => $_smarty_tpl->tpl_vars['oneItem2']->value) {
 $_smarty_tpl->tpl_vars['oneItem2']->_loop = true;
 ?>
-<div class="col-25 filter-kunst" style="background: url('<?php echo $_smarty_tpl->tpl_vars['oneItem2']->value['thumbnail'];?>
+<div class="col-25 filter-<?php echo $_smarty_tpl->tpl_vars['oneItem2']->value['type_vereniging'];?>
+" style="background: url('<?php echo $_smarty_tpl->tpl_vars['oneItem2']->value['thumbnail'];?>
 ') no-repeat center top; background-size: cover;">
 <a href="?action=pagina&vereniging=<?php echo $_smarty_tpl->tpl_vars['oneItem2']->value['id'];?>
 ">

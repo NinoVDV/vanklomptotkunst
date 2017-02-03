@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2017-01-23 13:11:15
+<?php /* Smarty version Smarty-3.1.18, created on 2017-02-03 12:30:22
          compiled from "views\maak_pagina.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:174405885ee2012a437-62613992%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '733c0191920ba3b66a0ea640c1ba9920286215b4' => 
     array (
       0 => 'views\\maak_pagina.tpl',
-      1 => 1485173244,
+      1 => 1486121363,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5885ee2014e727_75848298')) {function content_5885ee2014e727_75848298($_smarty_tpl) {?><br>
 <br>
 <br>
-<h1>Maak verenigingpagina</h1>
+<h2>Maak verenigingpagina</h2>
 <form method="post">
     <input type="text" placeholder="Naam pagina" name="naam_vp" required>
     <input type="text" placeholder="Adres" name="adres_vp" required>

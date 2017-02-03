@@ -11,9 +11,7 @@
     </div>
 </header>
 <!-- End Header -->
-
 {/foreach}
-
 <!-- Locaties -->
 <section id="locations">
 <div class="container">
@@ -26,7 +24,7 @@
 
 <div class="thumbs">
 {foreach from=$result2 item=oneItem2}
-<div class="col-25 filter-kunst" style="background: url('{$oneItem2.thumbnail}') no-repeat center top; background-size: cover;">
+<div class="col-25 filter-{$oneItem2.type_vereniging}" style="background: url('{$oneItem2.thumbnail}') no-repeat center top; background-size: cover;">
 <a href="?action=pagina&vereniging={$oneItem2.id}">
   <div class="overlay">
       <h3>{$oneItem2.naam_vereniging}</h3>

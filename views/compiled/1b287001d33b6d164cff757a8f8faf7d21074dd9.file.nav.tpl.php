@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2017-01-23 15:11:41
+<?php /* Smarty version Smarty-3.1.18, created on 2017-01-27 12:42:20
          compiled from "views\nav.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2387158860f1da01f34-13488970%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1b287001d33b6d164cff757a8f8faf7d21074dd9' => 
     array (
       0 => 'views\\nav.tpl',
-      1 => 1484910382,
+      1 => 1485517284,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_58860f1da47f16_91225737',
   'variables' => 
   array (
     'action' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_58860f1da47f16_91225737',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58860f1da47f16_91225737')) {function content_58860f1da47f16_91225737($_smarty_tpl) {?>
     <!-- Navigation -->
@@ -72,15 +72,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
           <!-- Mobile subnav -->
           <ul class="subnav">
-            <li><a href="#">Edam</a></li>
-            <li><a href="#">Volendam</a></li>
-            <li><a href="#">Warder</a></li>
-            <li><a href="#">Kwadijk</a></li>
-            <li><a href="#">Oosthuizen</a></li>
-            <li><a href="#">Schardam</a></li>
-            <li><a href="#">Beets</a></li>
-            <li><a href="#">Middelie</a></li>
-            <li><a href="#">Hobrede</a></li>
+            <li><a href="?action=locations&location=Edam">Edam</a></li>
+            <li><a href="?action=locations&location=Volendam">Volendam</a></li>
+            <li><a href="?action=locations&location=Warder">Warder</a></li>
+            <li><a href="?action=locations&location=Kwadijk">Kwadijk</a></li>
+            <li><a href="?action=locations&location=Oosthuizen">Oosthuizen</a></li>
+            <li><a href="?action=locations&location=Schardam">Schardam</a></li>
+            <li><a href="?action=locations&location=Beets">Beets</a></li>
+            <li><a href="?action=locations&location=Middelie">Middelie</a></li>
+            <li><a href="?action=locations&location=Hobrede">Hobrede</a></li>
           </ul>
            <!-- End Mobile subnav -->
 
